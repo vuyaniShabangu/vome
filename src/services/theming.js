@@ -176,12 +176,12 @@ const defaultType = getType(process.env.REACT_APP_THEME_TYPE);
 
 const defaultTheme = createMuiTheme({
   palette: {
-    primary: defaultPrimaryColor.import,
-    secondary: defaultSecondaryColor.import,
+    primary: {main: '#1647fb'},
+    secondary: {main: '#fae3eb'},
     type: defaultType.id
   },
 
-  primaryColor: defaultPrimaryColor,
+  primaryColor: '#1647fb',
   secondaryColor: defaultSecondaryColor,
   type: defaultType
 });

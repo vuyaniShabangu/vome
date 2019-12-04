@@ -11,6 +11,7 @@ import HomeIcon from '@material-ui/icons/Home';
 import GitHubCircleIcon from 'mdi-material-ui/GithubCircle';
 
 import EmptyState from '../EmptyState';
+import Album from '../Album/Album';
 
 const styles = (theme) => ({
   emptyStateIcon: {
@@ -44,6 +45,7 @@ class HomeContent extends Component {
     }
 
     return (
+      <div>
       <EmptyState
         title={process.env.REACT_APP_NAME}
         description="The three musketeers, all in one pack in the form of a boilerplate app"
@@ -54,6 +56,8 @@ class HomeContent extends Component {
           </Fab>
         }
       />
+      <Album />
+      </div>
     );
   }
 }
